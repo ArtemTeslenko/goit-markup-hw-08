@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  color: map-get($colors, accent);
+  font-family: $interim-font-family;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+.header__logo--brightness-theme {
+  color: map-get($colors, main-heading);
+}
+
+.footer__logo--brightness-theme {
+  color: map-get($colors, interim-heading);
+}
+
+// .footer__logo {
+//   margin-right: 0;
+//   margin-bottom: 20px;
+// }

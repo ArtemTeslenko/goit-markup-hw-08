@@ -1,0 +1,67 @@
+.button {
+  min-width: 200px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: map-get($colors, interim-heading);
+  background-color: map-get($colors, accent);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  @include effectsTiming(background);
+
+  &:hover,
+  &:focus {
+    background: map-get($colors, button-accent);
+  }
+}
+
+.form-connection__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-connection__button--icon {
+  margin-left: 10px;
+}
+
+.modal__button {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter__button {
+  padding: 6px 22px;
+
+  color: map-get($colors, main-heading);
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  @include effectsTiming((color, background-color, box-shadow));
+
+  &:hover,
+  &:focus,
+  &.filter__button--current {
+    color: map-get($colors, interim-heading);
+    background-color: map-get($colors, accent);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

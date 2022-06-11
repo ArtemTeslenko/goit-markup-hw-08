@@ -1,0 +1,84 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  &.is-open {
+    display: block;
+    background-color: map-get($colors, main-background);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  // margin-right: 50px;
+}
+
+.navigation__switch {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &.is-open .navigation__icon-close {
+    display: block;
+  }
+
+  &.is-open .navigation__icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.navigation__icon-close {
+  display: none;
+}
+
+.navigation__link {
+  display: block;
+  // position: relative;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+
+  color: map-get($colors, main-heading);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @include effectsTiming(color);
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent);
+  }
+}
+
+// .navigation__link--current {
+//   color: map-get($colors, accent);
+//   &::after {
+//     position: absolute;
+//     content: '';
+//     height: 4px;
+//     width: 100%;
+//     left: 0;
+//     bottom: -1px;
+//     background-size: contain;
+//     background-color: map-get($colors, accent);
+//     border-radius: 2px;
+//   }
+// }

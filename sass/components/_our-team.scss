@@ -1,0 +1,11 @@
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: map-get($colors, interim-background);
+}
+
+.our-team__list {
+  display: flex;
+  margin-left: -30px;
+}
