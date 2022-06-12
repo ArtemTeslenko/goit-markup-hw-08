@@ -1,0 +1,26 @@
+.header__menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      padding-left: 40px;
+
+      background-color: map-get($colors, main-background);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

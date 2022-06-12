@@ -20,43 +20,59 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
-          <a href="#" class="logo">Web<span class="header__logo--brightness-theme">Studio</span></a>
-          <ul class="navigation__menu" data-menu>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link--current">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" target="_self" class="navigation__link">Портфолио</a>
-            </li>
-            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="header__contacts">
-          <li class="header__item">
-            <a href="mailto:info@devstudio.com" class="header__link">
-              <svg class="header__icon" width="16px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header__item">
-            <a href="tel:+380961111111" class="header__link">
-              <svg class="header__icon" width="10px" height="16px">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <button class="navigation__switch" data-menu-button>
+        <a href="#" class="logo">Web<span class="header__logo--brightness-theme">Studio</span></a>
+        <div class="header__menu" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__menu">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--current">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" target="_self" class="navigation__link">Портфолио</a>
+              </li>
+              <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__menu--wrapper">
+            <ul class="header__contacts">
+              <li class="header__item">
+                <a href="tel:+380961111111" class="header__link header__link--tel">
+                  <svg class="header__icon" width="10px" height="16px">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="mailto:info@devstudio.com" class="header__link header__link--mail">
+                  <svg class="header__icon" width="16px" height="12px">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link" href="">Instagram</a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="">Twitter</a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="">Facebook</a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="switch" data-menu-button>
           <svg width="40px" height="40px">
-            <use class="navigation__icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-            <use
-              class="navigation__icon-close"
-              href="./images/symbol-defs.svg#icon-close_40px"
-            ></use>
+            <use class="switch__menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            <use class="switch__close" href="./images/symbol-defs.svg#icon-close_40px"></use>
           </svg>
         </button>
       </div>

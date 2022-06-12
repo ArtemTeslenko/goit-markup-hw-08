@@ -1,0 +1,31 @@
+.switch {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+
+  @include effectsTiming(fill);
+
+  &.is-open .switch__close {
+    display: block;
+  }
+
+  &.is-open .switch__menu {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: map-get($colors, accent);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.switch__close {
+  display: none;
+}
