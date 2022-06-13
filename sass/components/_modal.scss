@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  @include effectsTiming((opacity, transform, visibility));
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scale(0.3);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 93px;
+  left: 3vw;
+  width: 94vw;
+  min-height: 610px;
+  padding: 40px;
+  background-color: map-get($colors, main-background);
+}
+
+.modal__close {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: map-get($colors, main-background);
+
+  @include effectsTiming(fill);
+  &:hover,
+  &:focus {
+    fill: map-get($colors, accent);
+    outline: none;
+  }
+}
+
+.modal__urge {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: map-get($colors, main-heading);
+}

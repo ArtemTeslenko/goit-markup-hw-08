@@ -21,6 +21,10 @@ img {
   display: block;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   @media screen and (min-width: $mobile) {
     width: $mobile;
