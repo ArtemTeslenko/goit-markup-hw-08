@@ -33,6 +33,12 @@
     margin-top: 30px;
     width: calc((100% - 60px) / 2);
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .advantages__wrapper {
@@ -50,4 +56,8 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }

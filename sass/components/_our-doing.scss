@@ -3,5 +3,41 @@
 
   @media screen and (min-width: $desktop) {
     display: block;
+    padding-bottom: 94px;
   }
+}
+
+.our-doing__list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.our-doing__item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.our-doing__link {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+}
+
+.our-doing__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: map-get($colors, interim-heading);
+  background: rgba(47, 48, 58, 0.8);
 }

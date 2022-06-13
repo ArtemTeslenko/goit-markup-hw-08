@@ -26,6 +26,19 @@
   min-height: 610px;
   padding: 40px;
   background-color: map-get($colors, main-background);
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: fit-content;
+    line-height: 1.15;
+  }
 }
 
 .modal__close {
@@ -127,5 +140,72 @@
   &:focus {
     border-color: map-get($colors, accent);
     outline: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.acceptance-box {
+  margin-bottom: 30px;
+}
+
+.acceptance-box__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02rem;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.acceptance-box__input {
+  appearance: none;
+  position: absolute;
+}
+
+.acceptance-box__svg {
+  margin-right: 8px;
+}
+
+.acceptance-box__svg--checked {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-50%);
+
+  @include effectsTiming(opacity);
+
+  .acceptance-box__input:checked ~ & {
+    opacity: 1;
+  }
+}
+
+.acceptance-box__svg--non-checked {
+  @include effectsTiming((opacity, fill));
+  .acceptance-box__input:checked + & {
+    opacity: 0;
+  }
+  .acceptance-box__input:focus + & {
+    fill: map-get($colors, accent);
+  }
+}
+
+.acceptance-box__link {
+  color: map-get($colors, accent);
+  margin-left: 3px;
+  text-decoration-line: underline;
+
+  &:hover {
+    text-decoration-line: none;
   }
 }
