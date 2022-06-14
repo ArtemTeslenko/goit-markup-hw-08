@@ -3,9 +3,18 @@
   padding-bottom: 60px;
 
   background-color: map-get($colors, interim-background);
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team__list {
-  //   display: flex;
-  //   margin-left: -30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }

@@ -8,8 +8,26 @@
   }
 }
 
+.footer__container {
+  @media screen and (min-width: $tablet) {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+}
+
+.footer__tablet-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer__contacts {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .footer__physical-address {

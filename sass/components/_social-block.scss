@@ -1,5 +1,9 @@
 .social-block {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .social-block__urge {
