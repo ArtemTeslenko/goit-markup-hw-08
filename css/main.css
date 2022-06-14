@@ -20,6 +20,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -106,6 +108,15 @@ p {
 
 .header__container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -287,6 +298,15 @@ p {
   color: #212121;
 }
 
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__logo--brightness-theme {
+  color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     margin-right: 84px;
@@ -419,7 +439,6 @@ p {
   position: absolute;
   top: -6px;
   right: 0;
-  z-index: 1;
   border: none;
   background-color: transparent;
   -webkit-transition-property: fill;
@@ -428,6 +447,12 @@ p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switch.is-open {
+  position: absolute;
+  top: -6px;
+  right: 0;
 }
 
 .switch.is-open .switch__close {
@@ -507,6 +532,8 @@ p {
 }
 
 .form-connection__button {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +778,220 @@ p {
 
 .employee-card__link:not(:last-child) {
   margin-right: 10px;
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.clients-list__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 92px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list__link:hover, .clients-list__link:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 60px;
+}
+
+.footer__physical-address {
+  margin-top: 0;
+  margin-bottom: 8px;
+  min-width: 231px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover, .footer__link:focus {
+  color: #2196f3;
+}
+
+.social-block {
+  margin-bottom: 60px;
+}
+
+.social-block__urge {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-block__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  border-radius: 50%;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-block__link:hover, .social-block__link:focus {
+  background-color: #2196f3;
+}
+
+.social-block__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.form-connection {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.form-connection__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-connection__input {
+  width: 100%;
+  padding: 15px 0px 15px 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-connection__input:focus {
+  border-color: #2196f3;
+}
+
+.form-connection__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-connection__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-connection__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-connection__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .backdrop {

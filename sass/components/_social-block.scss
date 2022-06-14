@@ -1,0 +1,39 @@
+.social-block {
+  margin-bottom: 60px;
+}
+
+.social-block__urge {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: map-get($colors, interim-heading);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-block__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social-block__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: map-get($colors, interim-heading);
+  border-radius: 50%;
+
+  @include effectsTiming(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, accent);
+  }
+}
+
+.social-block__link:not(:last-child) {
+  margin-right: 10px;
+}

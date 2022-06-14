@@ -1,0 +1,36 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.clients-list__item {
+  flex-basis: calc((100% - 60px) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients-list__link {
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid map-get($colors, icons-default);
+  border-radius: 4px;
+  fill: map-get($colors, icons-default);
+
+  @include effectsTiming((border-color, fill));
+
+  &:hover,
+  &:focus {
+    border-color: map-get($colors, accent);
+    fill: map-get($colors, accent);
+  }
+}

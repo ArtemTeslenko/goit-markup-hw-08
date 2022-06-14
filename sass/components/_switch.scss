@@ -2,11 +2,16 @@
   position: absolute;
   top: -6px;
   right: 0;
-  z-index: 1;
   border: none;
   background-color: transparent;
 
   @include effectsTiming(fill);
+
+  &.is-open {
+    position: absolute;
+    top: -6px;
+    right: 0;
+  }
 
   &.is-open .switch__close {
     display: block;

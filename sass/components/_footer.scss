@@ -1,0 +1,38 @@
+.footer {
+  background-color: map-get($colors, dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 60px;
+}
+
+.footer__physical-address {
+  margin-top: 0;
+  margin-bottom: 8px;
+  min-width: 231px;
+
+  font-style: normal;
+  color: map-get($colors, interim-heading);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  @include effectsTiming(color);
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent);
+  }
+}

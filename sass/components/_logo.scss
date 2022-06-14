@@ -10,3 +10,12 @@
 .header__logo--brightness-theme {
   color: map-get($colors, main-heading);
 }
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__logo--brightness-theme {
+  color: map-get($colors, interim-heading);
+}
