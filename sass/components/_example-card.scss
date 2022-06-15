@@ -1,5 +1,7 @@
 .examples__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   @include effectsTiming(box-shadow);
 
@@ -14,10 +16,6 @@
   position: relative;
   overflow: hidden;
   align-items: center;
-}
-
-.examples__img {
-  display: block;
 }
 
 .examples__description-wrapper {
@@ -53,6 +51,7 @@
 }
 
 .examples__wrapper {
+  flex-grow: 1;
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -60,7 +59,6 @@
   border-bottom: 1px solid map-get($colors, example-border);
   border-left: 1px solid map-get($colors, example-border);
   border-right: 1px solid map-get($colors, example-border);
-  outline: 1px solid black;
 }
 
 .examples__heading {

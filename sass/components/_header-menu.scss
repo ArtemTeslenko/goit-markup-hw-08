@@ -3,10 +3,10 @@
     display: none;
 
     &.is-open {
+      position: absolute;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -18,6 +18,7 @@
       background-color: map-get($colors, main-background);
     }
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
