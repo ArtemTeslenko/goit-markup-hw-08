@@ -147,10 +147,12 @@
           <li class="our-doing__item">
             <a href="" class="our-doing__link"
               ><img
-                class="no-gap"
-                src="./images/hands-on-the-keyboard.jpg"
+                srcset="
+                  ./images/hands-on-the-keyboard-1x.jpg 1x,
+                  ./images/hands-on-the-keyboard-2x.jpg 2x
+                "
+                src="./images/hands-on-the-keyboard-1x.jpg"
                 alt="Руки на клавиатуре"
-                width="370"
               />
               <p class="our-doing__description">Десктопные приложения</p></a
             >
@@ -158,10 +160,9 @@
           <li class="our-doing__item">
             <a href="" class="our-doing__link"
               ><img
-                class="no-gap"
-                src="./images/phone-in-the-hand.jpg"
+                srcset="./images/phone-in-the-hand-1x.jpg 1x, ./images/phone-in-the-hand-2x.jpg 2x"
+                src="./images/phone-in-the-hand-1x.jpg"
                 alt="В руке телефон"
-                width="370"
               />
               <p class="our-doing__description">Мобильные приложения</p></a
             >
@@ -169,10 +170,12 @@
           <li class="our-doing__item">
             <a href="" class="our-doing__link"
               ><img
-                class="no-gap"
-                src="./images/tablet-in-the-hand.jpg"
+                srcset="
+                  ./images/tablet-in-the-hand-1x.jpg 1x,
+                  ./images/tablet-in-the-hand-2x.jpg 2x
+                "
+                src="./images/tablet-in-the-hand-1x.jpg"
                 alt="В руке планшет"
-                width="370"
               />
               <p class="our-doing__description">Дизайнерские решения</p></a
             >
@@ -186,7 +189,21 @@
         <h2 class="heading our-team__heading">Наша команда</h2>
         <ul class="our-team__list">
           <li class="employee-card">
-            <img class="no-gap" src="./images/ihor.jpg" alt="Фото Игоря" width="270" />
+            <picture>
+              <source
+                srcset="./images/ihor-desktop-1x.jpg 1x, ./images/ihor-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/ihor-tablet-1x.jpg 1x, ./images/ihor-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/ihor-mobile-1x.jpg 1x, ./images/ihor-mobile-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/ihor-desktop-1x.jpg" alt="Фото Игоря" />
+            </picture>
             <div class="employee-card__wrapper">
               <h3 class="heading employee-card__member">Игорь Демьяненко</h3>
               <p class="employee-card__position">Product Designer</p>
@@ -212,7 +229,21 @@
             </div>
           </li>
           <li class="employee-card">
-            <img class="no-gap" src="./images/olha.jpg" alt="Фото Ольги" width="270" />
+            <picture>
+              <source
+                srcset="./images/olha-desktop-1x.jpg 1x, ./images/olha-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/olha-tablet-1x.jpg 1x, ./images/olha-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/olha-mobile-1x.jpg 1x, ./images/olha-mobile-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/olha-desktop-1x.jpg" alt="Фото Ольги" />
+            </picture>
             <div class="employee-card__wrapper">
               <h3 class="heading employee-card__member">Ольга Репина</h3>
               <p class="employee-card__position">Frontend Developer</p>
@@ -238,7 +269,21 @@
             </div>
           </li>
           <li class="employee-card">
-            <img class="no-gap" src="./images/nikolay.jpg" alt="Фото Николая" width="270" />
+            <picture>
+              <source
+                srcset="./images/nikolay-desktop-1x.jpg 1x, ./images/nikolay-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/nikolay-tablet-1x.jpg 1x, ./images/nikolay-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/nikolay-mobile-1x.jpg 1x, ./images/nikolay-mobile-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/nikolay-desktop-1x.jpg" alt="Фото Николая" />
+            </picture>
             <div class="employee-card__wrapper">
               <h3 class="heading employee-card__member">Николай Тарасов</h3>
               <p class="employee-card__position">Marketing</p>
@@ -264,7 +309,21 @@
             </div>
           </li>
           <li class="employee-card">
-            <img class="no-gap" src="./images/myhail.jpg" alt="Фото Михаила" width="270" />
+            <picture>
+              <source
+                srcset="./images/myhail-desktop-1x.jpg 1x, ./images/myhail-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/myhail-tablet-1x.jpg 1x, ./images/myhail-tablet-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/myhail-mobile-1x.jpg 1x, ./images/myhail-mobile-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/myhail-desktop-1x.jpg" alt="Фото Михаила" />
+            </picture>
             <div class="employee-card__wrapper">
               <h3 class="heading employee-card__member">Михаил Ермаков</h3>
               <p class="employee-card__position">UI Designer</p>

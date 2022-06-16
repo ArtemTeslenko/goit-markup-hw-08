@@ -106,13 +106,35 @@
           <ul class="examples">
             <li class="examples__item">
               <a class="examples__link" href="">
-                <div class="examples__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/laptop-with-photos-desktop-1x.jpg 1x,
+                      ./images/laptop-with-photos-desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/laptop-with-photos-tablet-1x.jpg 1x,
+                      ./images/laptop-with-photos-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/laptop-with-photos-mobile-1x.jpg 1x,
+                      ./images/laptop-with-photos-mobile-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
                     class="examples__img"
-                    src="./images/laptop-with-photos.jpg"
+                    src="./images/laptop-with-photos-desktop-1x.jpg"
                     alt="Ноутбук с фотографиями на экране"
-                    width="370"
                   />
+                </picture>
+                <div class="examples__thumb">
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -130,12 +152,34 @@
             <li class="examples__item">
               <a class="examples__link" href=""
                 ><div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/nba-players.jpg"
-                    alt="Баскетболисты"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/nba-players-desktop-1x.jpg 1x,
+                        ./images/nba-players-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/nba-players-tablet-1x.jpg 1x,
+                        ./images/nba-players-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/nba-players-mobile-1x.jpg 1x,
+                        ./images/nba-players-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/nba-players-desktop-1x.jpg"
+                      alt="Баскетболисты"
+                    />
+                  </picture>
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -153,12 +197,34 @@
             <li class="examples__item">
               <a class="examples__link" href=""
                 ><div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/fish-shade.jpg"
-                    alt="Эмблема ресторана с силуэтом рыбы"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/fish-shade-desktop-1x.jpg 1x,
+                        ./images/fish-shade-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/fish-shade-tablet-1x.jpg 1x,
+                        ./images/fish-shade-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/fish-shade-mobile-1x.jpg 1x,
+                        ./images/fish-shade-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/fish-shade-desktop-1x.jpg"
+                      alt="Эмблема ресторана с силуэтом рыбы"
+                    />
+                  </picture>
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
