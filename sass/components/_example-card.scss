@@ -15,15 +15,14 @@
 .examples__thumb {
   position: relative;
   overflow: hidden;
-  align-items: center;
 }
 
 .examples__description-wrapper {
   display: flex;
   position: absolute;
-  height: 100%;
+  overflow: auto;
   top: 0;
-  left: 0;
+  bottom: 0;
   margin: 0;
   padding-left: 24px;
   padding-right: 24px;
@@ -39,6 +38,20 @@
   .examples__link:focus & {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get($colors, interim-heading);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 2px;
   }
 }
 

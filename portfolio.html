@@ -242,12 +242,34 @@
             <li class="examples__item">
               <a class="examples__link" href=""
                 ><div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/earphones.jpg"
-                    alt="Наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/earphones-desktop-1x.jpg 1x,
+                        ./images/earphones-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/earphones-tablet-1x.jpg 1x,
+                        ./images/earphones-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/earphones-mobile-1x.jpg 1x,
+                        ./images/earphones-mobile-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/earphones-desktop-1x.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -265,12 +287,25 @@
             <li class="examples__item">
               <a class="examples__link" href=""
                 ><div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/boxes.jpg"
-                    alt="Картонные коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/boxes-desktop-1x.jpg 1x, ./images/boxes-desktop-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/boxes-tablet-1x.jpg 1x, ./images/boxes-tablet-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/boxes-mobile-1x.jpg 1x, ./images/boxes-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/boxes-desktop-1x.jpg"
+                      alt="Картонные коробки"
+                    />
+                  </picture>
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -288,12 +323,28 @@
             <li class="examples__item">
               <a class="examples__link" href=""
                 ><div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/monitor.jpg"
-                    alt="Большой монитор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/monitor-desktop-1x.jpg 1x,
+                        ./images/monitor-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/monitor-tablet-1x.jpg 1x, ./images/monitor-tablet-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/monitor-mobile-1x.jpg 1x, ./images/monitor-mobile-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/monitor-desktop-1x.jpg"
+                      alt="Большой монитор"
+                    />
+                  </picture>
                   <div class="examples__description-wrapper">
                     <p class="examples__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
