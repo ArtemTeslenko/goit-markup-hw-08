@@ -175,6 +175,7 @@
 
 .acceptance-box__svg {
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .acceptance-box__svg--checked {
@@ -188,6 +189,7 @@
 
   .acceptance-box__input:checked ~ & {
     opacity: 1;
+    flex-shrink: 0;
   }
 }
 

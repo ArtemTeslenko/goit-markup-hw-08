@@ -58,7 +58,6 @@ p {
   text-align: center;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
@@ -66,6 +65,18 @@ p {
 @media screen and (min-width: 1200px) {
   .heading {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    font-size: 36px;
   }
 }
 
@@ -805,7 +816,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .employee-card {
+  .employee-card:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1465,6 +1476,8 @@ p {
 
 .acceptance-box__svg {
   margin-right: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .acceptance-box__svg--checked {
@@ -1484,6 +1497,8 @@ p {
 
 .acceptance-box__input:checked ~ .acceptance-box__svg--checked {
   opacity: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .acceptance-box__svg--non-checked {

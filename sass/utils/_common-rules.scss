@@ -52,12 +52,19 @@ p {
 
   color: map-get($colors, main-heading);
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
   }
 }
 
